@@ -43,7 +43,7 @@ async function decryptMessage(encryptedData, iv, key) {
         // 16 Character secret key
         const secretKey = 'MySecretKey12345';
         const key = await generateKey(secretKey);
-        const message = 'It's a secret to everyone!';
+        const message = "It's a secret to everyone!";
 
         const { encryptedData, iv } = await encryptMessage(message, key);
         console.log('Encrypted Data:', encryptedData);
